@@ -14,7 +14,7 @@ def test_should_return_buzz_when_divisible_only_by_5(number):
 
 
 @pytest.mark.parametrize("number", [1, 2, 4, 7, 8, 11])
-def test_should_return_number_when_not_divisible_by_3_or_5(number):
+def test_should_return_number_when_divisible_neither_by_3_nor_5(number):
     assert fizzbuzz(number) == number
 
 
