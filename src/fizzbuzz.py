@@ -2,4 +2,12 @@ from typing import Union
 
 
 def fizzbuzz(number: int) -> Union[int, str]:
-    return 'Buzz' if number % 5 == 0 else 'Fizz' if number % 3 == 0 else number
+    if number % 3 == 0:
+        if number % 5 == 0:
+            return 'FizzBuzz'
+        else:
+            return 'Fizz'
+    if number % 5 == 0:
+        return 'Buzz'
+
+    return number
